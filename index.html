@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Student Games</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 20px #000;
+      transition: transform 0.3s;
+    }
+
+    /* Tap effect for touch devices */
+    .game-section:active {
+      transform: scale(1.05);
+    }
+
+    .game-section img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      border: 3px solid #fff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .game-button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #ffcb05;
+      color: #000;
+      transition: background 0.3s;
+    }
+
+    .game-button:hover {
+      background: #ff6f61;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <header>🎮 Fun Student Games 🎨</header>
+
+  <section class="game-section" style="background: rgba(255,0,0,0.3);">
+    <img src="GeoDash.jpeg" alt="Geometry Dash">
+    <h2>Geometry Dash</h2>
+    <p>Test your reflexes and timing! Avoid obstacles and reach the end of the level.</p>
+    <button class="game-button" onclick="window.open('https://geometrydash.io/', '_blank')">Play Geometry Dash</button>
+  </section>
+
+  <section class="game-section" style="background: rgba(0,255,0,0.3);">
+    <img src="Roblox.jpeg" alt="Roblox">
+    <h2>Roblox</h2>
+    <p>Explore millions of worlds created by other players and make your own adventures!</p>
+    <button class="game-button" onclick="window.open('https://www.roblox.com/', '_blank')">Play Roblox</button>
+  </section>
+
+  <section class="game-section" style="background: rgba(0,0,255,0.3);">
+    <img src="BrawlStars.jpeg" alt="Brawl Stars">
+    <h2>Brawl Stars</h2>
+    <p>Fast-paced multiplayer battles where strategy and skill win the day!</p>
+    <button class="game-button" onclick="window.open('https://supercell.com/en/games/brawlstars/', '_blank')">Play Brawl Stars</button>
+  </section>
+
+  <footer>Keep having fun while learning! 🌟</footer>
+
+</body>
+</html>
